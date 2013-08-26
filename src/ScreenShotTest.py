@@ -18,7 +18,6 @@ driver.get("http://www.google.com")
 
 driver.get_screenshot_as_file(Snapshot_Dir + 'snapshot.png')
 
-
-
+driver.close()
 
 
