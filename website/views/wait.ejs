@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> - Webshot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' /> 
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Main text logo */
+	.element
+	{
+	text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.6);
+	color: #0080ff;
+	font-size: 75px;
+	}
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      .search {
+        margin: 60px 0;
+        text-align: center;
+	}
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet"> 
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+<script>
+window.setTimeout(function() {
+    window.location.href = '/view?url=<%=url%>';
+}, 10000);
+</script>
+
+    <!-- Fav and touch icons -->
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <h3 class="muted">Webshot</h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+        <p class="lead">Taking snapshot of <%=url%>, please wait ...</p>
+        <p class="lead"><img src="images/loader.gif" class="img-rounded" height="80" width="80"><p>
+      </div>
+
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4></h4>
+          <p></p>
+
+          <h4></h4>
+          <p></p>
+
+          <h4></h4>
+          <p></p>
+        </div>
+
+        <div class="span6">
+          <h4></h4>
+          <p></p>
+
+          <h4></h4>
+          <p></p>
+
+          <h4></h4>
+          <p></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p><a href="http://www.cs.umn.edu/~yjin" target="_blank">Yu Jin</a> 2013</p> 
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="/javascripts/jquery.js"></script> 
+  <script src="/javascripts/bootstrap.js"></script> 
+
+  </body>
+</html>
+
